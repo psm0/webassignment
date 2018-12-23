@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>회원가입</title>
+  </head>
+  <style media="screen">
+   input[type=submit]{
+    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    display: block;
+    margin: 10px auto;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+     color: rgba(30, 22, 54, 0.6);
+    box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+    position:relative;
+    left:-30px;
+    }
+    input[type=submit]:hover {
+    color: rgba(255, 255, 255, 0.85);
+    box-shadow: rgba(30, 22, 54, 0.7) 0px 0px 0px 40px inset;
+}
+  </style>
+  <body>
+    <table border ="1" style="border-collapse:collapse;" width="420" height="400">
+    <tr>
+        <td  align="center" bgcolor="skyblue">아이디</td>
+        <td><input type="text" style="border:2px dashed gray"></td>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="skyblue">비밀번호</td>
+        <td><input type="password" style="border:2px dashed gray" placeholder="대소문자+숫자 4자리 이상"/></td>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="skyblue">메일</td>
+        <td><input type="text" style="border:2px dashed gray" placeholder="example" />@<input type="text" style="border:2px dashed gray" placeholder="naver.com"></td>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="skyblue">연락처</td>
+        <td>
+           <select style="border:2px dashed gray">
+           <option value="p010">010</option>
+           <option value="p011">011</option>
+           <option value="p016">016</option>
+       </select>
+              -<input style="border:2px dashed gray" type="text" maxlength="4" size="4" />
+              -<input style="border:2px dashed gray" type="text" maxlength="4" size="4" />
+        </td>
+    </tr>
+    <tr>
+        <td align="center" bgcolor="skyblue">메일</td>
+        <td>
+             <input type="radio" style="border:2px dashed gray" id="" name="yes" checked="checked" />
+               <label name="yes" for="">수신동의</label>
+            <input type="radio" style="border:2px dashed gray" id="" name="yes" />
+            <label name="yes" for="">수신거부</label>
+        </td>
+    </tr>
+
+  </table>
+  <a onclick="javascript:alert('**시스템 점검중입니다:)**');window.close()"><input type="submit" value="가입하기" /></a>
+
+  </body>
+</html>
